@@ -1,0 +1,364 @@
+/* Chart basic styling */
+
+.cht-b{
+    margin-bottom : 32px;
+    margin-top : 32px;
+    clear : both;
+    padding : 4px;
+    border : 1px solid rgba(0,0,0,.1);
+}
+.cht-b input[type="radio"], input[type="checkbox"] {
+    position:absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.cht-b input[type="radio"] + label:not(.no-dft){
+    position:relative;
+    padding: 0 0 0 25px;
+    font-size: 1em;
+    line-height: 1.2em;
+    color : #888;
+}
+
+.cht-b input[type="radio"] + label:not(.no-dft):before{
+    content:"";
+    display:block;
+    position:absolute;
+    top: 50%;
+    left : 4px;
+    height: 14px;
+    width: 14px;
+    background: white;
+    margin: 0px;
+    border: 1px solid gray;
+    box-shadow: inset 0px 0px 0px 2px white;
+    -webkit-box-shadow: inset 0px 0px 0px 2px white;
+    -moz-box-shadow: inset 0px 0px 0px 2px white;
+    -o-box-shadow: inset 0px 0px 0px 2px white;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.cht-b input[type="radio"]:checked + label:not(.no-dft):before {
+    background: #FF4141;
+}
+
+.cht-b input[type="radio"]:checked + label:not(.no-dft), 
+.cht-b input[type="radio"]:checked + label:not(.no-dft) *{
+    color : #000;
+}
+.cht-b input[type="radio"]:checked + label.inv:not(.no-dft) {
+    color : #FFF;
+}
+.cht-b .cht-form > div > .box {
+    border: 1px solid rgba(0,0,0,.3);
+    padding: 0 48px;
+    position: relative;
+    display: inline-block;
+}
+.cht-b .cht-form > div > .box input{
+    position: absolute;
+    top : 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+.cht-b .cht-form p{
+    text-align : center;
+    font-size: .857em;
+}
+.cht-b .cht-form p i {
+    font-size: 3em;
+}
+.cht-b .cht-form p > a{
+    color : #fff;
+}
+.cht-b .cht-edt{
+    color: #fff;
+    display: table;
+    margin: auto;
+    margin-top: 8%;
+    background: rgba(0,0,0,.6);
+    cursor: pointer;
+}
+.cht-b .cht-hldr {
+    padding : 8px;
+    font-size: 1em;
+}
+.cht-b .cht-hldr h3{
+    font-size: .857em;
+    font-family: 'Roboto', serif;
+    font-weight: 300;
+    line-height: 1.4em;
+    color : #555;
+    margin-top : 8px;
+}
+.cht-b .cht-hldr .svg2{
+    font-size: 0.857em;
+}
+.cht-b .cht-hldr .cht-tp {
+    display: inline-block;
+    float: left;
+    width : 20%;
+    border: 1px solid rgba(0,0,0,.1);
+    text-align: center;
+    background : #F6F6F6;
+    padding : 8px 0;
+    margin : 4px 0;
+    font-size: .5714em;
+    letter-spacing: .05em;
+    line-height: 1em;
+    color : #555;
+}
+.cht-b .cht-tp.selected {
+    color : #FF816F;
+    border-color : #FF816F !important;
+}
+.cht-b .cht-hldr .cht-tp i {
+    font-size: 3em;
+}
+.cht-b .chart .arrows {
+    float: right;
+    top: -4px;
+    right: 0;
+}
+.cht-b .chart .arrows a {
+    font-size : 2em;    
+}
+.cht-b .cht-opts li label {
+    font-size : .9285em;
+}
+.cht-b .chart .arrows a, .lst-opts a {font-size: 3em; color : #888;}
+.cht-b .chart .arrows a:hover, .lst-opts a:hover { color : #444; }
+.cht-b .chart .arrows a i, .lst-opts a i {margin: 0 -6px;}
+.cht-b .chart select{
+    -webkit-appearance: menulist;
+    font-size: .857em;
+    width : auto;
+    margin : 0 8px;
+}
+.cht-b .chart{
+    width : 100%;
+    margin : 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.cht-b .mul-chart{
+    display: table;
+    margin: 16px auto 8px;
+    position: relative;
+}
+.cht-b label {position: relative;top : 2px;}
+.cht-b #analysis select { margin : 8px 0 4px;}
+.cht-b #legend{
+    width:35%;
+}
+.cht-b .cht-opts{
+    display: table;
+    margin: 16px auto 8px;
+}
+.cht-b .cht-opts li {
+    position: relative;
+    list-style-type: none;
+    float : left;
+    padding : 4px 0 4px;
+    margin : 0 !important;
+    /*    border : 1px solid rgba(0,0,0,.1);*/
+    border-right: 0;
+}
+.cht-b .cht-opts li:last-of-type {
+    /*    border-right: 1px solid rgba(0,0,0,.1);*/
+    margin-bottom: 16px !important;
+}
+.cht-b .cht-opts li.slct {
+    color : #FF4141;
+
+}
+.cht-b .cht-opts li:not(:last-of-type){
+    /*    border-right : 1px solid rgba(0,0,0,.1);*/
+}
+.cht-b .cht-opts label {
+    top : 0;
+    font-size : .9285em !important;
+}
+.cht-b .cht-opts input[type="radio"] + label:before {
+    top : 2px;
+}
+.cht-b #chart-note {
+    text-align: center;
+}
+.cht-b .sector:hover
+{
+    fill:black;
+}   
+.cht-b .svg text {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 0.857em;
+    fill : #888;
+}
+
+.cht-b .axis path,
+.cht-b .axis line {
+    fill:none;
+    stroke:#767670;
+    stroke-width:3px;
+    shape-rendering: crispEdges;
+}         
+.cht-b .yaxis #neg-axis line{
+    stroke-dasharray:1,1 !important;
+}
+.cht-b .yaxis .axis line {
+    fill:none;
+    stroke-dasharray:1,1;
+    stroke:#767670;
+    stroke-width:1px;
+    shape-rendering: crispEdges;
+    z-index: -1;
+
+}  
+.cht-b .yaxis .axis :first-child line {
+    stroke-dasharray:0;
+    fill:none;
+    stroke:#767670;
+    stroke-width:1px;
+    shape-rendering: crispEdges;
+}
+.cht-b .tick {
+    font-family: sans-serif;
+    font-size: .857em;
+    fill:#767670;
+
+}
+/*.cht-b .tag{
+    margin : 4px;
+    padding: 8px;
+    color : #FFF;
+    font-size:.9285em;
+}*/
+.cht-b g{
+    position: relative;
+}
+.cht-b #chart{
+    position:relative;
+}
+.cht-b .chart .txtbx{
+    font-size: 1em !important;
+    line-height: 1.6em !important;
+    text-align: center;
+    color : #FFF !important;
+    background: #444;
+    padding: 8px;
+    font-family: 'Gentium Basic', serif;
+    font-weight: 400;
+    opacity : .8;
+}
+.cht-b .chart .txtbx.vtbx:before {
+    content: '';
+    border-top: 8px solid #444;
+    border-left: 8px inset transparent;
+    border-right: 8px inset transparent;
+    width: 0;
+    height: 0;
+    opacity: .4;
+    position: absolute;
+    left: 50%;
+    top: 118%;
+    margin-left: -8px;
+}
+.cht-b .chart .txtbx:before {
+    content: '';
+    border-right: 8px solid #444;
+    border-top: 8px inset transparent;
+    border-bottom: 8px inset transparent;
+    width : 0;
+    height: 0;
+    opacity: .8;
+    position: absolute;
+    left: -8px;
+    top : 50%;
+    margin-top : -8px;
+}
+.cht-b .chart-tags{
+    list-style-type: none !important;
+    margin: 0 !important;
+}
+.cht-b .chart-tags .tag 
+{float: left;
+ margin : 4px 2px;
+ padding: 0px 4px;
+ color : #FFF !important;
+ font-size:.714em;
+}
+.cht-b #chart-head{
+    margin-left:20px;
+}
+.cht-b #yaxis{
+    width : 35px;
+}
+.cht-b .hsty-bx {
+    position: relative;
+}
+.cht-b .hsty-bx > div.slct-bx {
+    position: absolute;
+    bottom : 8px;
+    left : 50%;
+    font-size: 1.2857em;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+}
+.cht-b .slct-bx + .mul-chart {
+    margin-bottom: 48px;
+}
+.cht-b #ntf-bx {
+    list-style-type: none;
+    width : 220px;
+    position: fixed;
+    bottom : 8px;
+    left : 8px;
+}
+.cht-b #ntf-bx li {
+    padding : 12px 16px;
+    width : 100%;
+    min-height : 40px;
+    position: relative;
+    background: #E31E24;
+    color : #FFF;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    margin : 4px 0;
+}
+.cht-b #ntf-bx li a.cls {
+    position: absolute;
+    top : 4px;
+    right : 8px;
+    color : #FFF;
+}
+.cht-b #ntf-bx li a.cls i {
+    color : #FFF;
+    font-size: 1.4285em;
+}
+/* Bar graph css */
+.cht-b .axis path {
+    display: none;
+}
+.cht-b .tick text {
+    font-size: 1em;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+}
+
+.cht-b .gllabel{
+    visibility:hidden;
+}
+.cht-b .overlay{
+    background: rgba(0,0,0,.4);
+    position: absolute;
+    left: 0;right: 0;
+    top: 0;bottom: 0;
+    text-align: center;
+}

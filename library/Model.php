@@ -1,8 +1,9 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+class Model {
 
+    public function getDBConnection($type, $db) {
+        return (new PDO('mysql:host=' . $host . ';dbname=' . $db, 'saddahaq', 'dambo'));
+    }
+
+}

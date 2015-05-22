@@ -1,0 +1,76 @@
+/* 
+    Document   : debate
+    Created on : 13 Sep, 2013, 6:23:11 PM
+    Author     : sandeep
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.container-fluid{
+  padding-top:32px
+}
+body {
+ font-family: 'Lato', sans-serif;
+}
+#deb-pg {
+ background-color : #FEFEFE;
+ padding : 0px 0px 24px 0px;
+ border : 1px solid #a8a8a8;
+ -moz-box-shadow: -2px 0 13px -1px #CFCCCD;
+ -webkit-box-shadow: -2px 0 13px -1px #CFCCCD;
+ box-shadow: -2px 0 13px -1px #CFCCCD;
+ border-radius: 5px;
+ min-height: 400px;
+}
+.txt-holder {
+ padding : 8px 16px 0px;
+}
+#deb-pg img {
+ margin: 24px auto;
+}
+#img-holder {
+ padding : 8px 4px;
+ -webkit-box-shadow: 0 3px 6px -3px rgba(0,0,0,0.4);
+ -moz-box-shadow: 0 3px 6px -3px rgba(0,0,0,0.4);
+ box-shadow: 0 3px 6px -3px rgba(0,0,0,0.4);
+}
+#deb-pg h1 {
+ font-weight: 300;
+ font-size: 2.857em;
+ text-align: center;
+ line-height: 1.5em;
+ color: #FF4444;
+}
+.time-loc {
+ margin: 16px 0px;
+ font-size: 1.4285em;
+ font-weight: 100;
+ text-align: center;
+ line-height: 2em;
+}
+.time-left {
+ font-weight: 100;
+ text-align: center;
+}
+.time-left p:first-child {
+ font-size: 1.285em;
+ letter-spacing: 0.1em;
+}
+.time-left #timer {
+ font-size: 2em;
+ letter-spacing: 0.1em;
+}
+.subhead {
+ font-size: 1.4285em !important; 
+ font-weight: 400 !important;
+ line-height: 1.5em;
+ margin : 16px 3px !important;
+}
+ul.unstyled {
+ font-size: 1.285em;
+ margin-left: 8px;
+}
+ul.unstyled li {
+ font-weight: 100;
+ line-height: 1.8em;
+}

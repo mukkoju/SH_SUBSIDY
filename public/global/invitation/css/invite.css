@@ -1,0 +1,45 @@
+@CHARSET "UTF-8";
+#inv-box {
+ background-color: #FDFDFD;
+ -moz-box-shadow: -2px 0 13px -1px #CFCCCD;
+ -webkit-box-shadow: -2px 0 13px -1px #CFCCCD;
+ box-shadow: -2px 0 13px -1px #CFCCCD;
+}
+.inv-sts {
+ font-size: 1.142em;
+ margin-top : 16px;
+ padding: 0;
+ line-height: 2em;
+ text-align: center;
+}
+.inv-sts .num {
+    display: block;
+    margin: 0 auto;
+    height: 2.1em;
+    width: 2.1em;
+    line-height: 2.1em;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    2background-color: #1FbbA6;
+    color: #6D6D6D;
+    text-align: center;
+    font-size: 1.142em;
+    -webkit-box-shadow : 0 0px 6px rgba(0, 0, 0, 0.51), inset 0 0 5px rgba(15, 15, 15, 0.1);
+    -moz-box-shadow : 0 0px 6px rgba(0, 0, 0, 0.51), inset 0 0 5px rgba(15, 15, 15, 0.1);
+    box-shadow : 0 0px 6px rgba(0, 0, 0, 0.51), inset 0 0 5px rgba(15, 15, 15, 0.1);
+}
+a.del {text-decoration: none; color : #000;}
+#inv-frm {
+ width: 95%;
+ margin: 8px auto 16px;
+}
+#inv-frm input[type='submit'] {padding : 11px 28px;}
+#req_inv {
+ display: block;
+ margin: 8px auto;
+ padding: 16px 48px;
+}
+#inv-lst {
+ width: 95%;
+ margin: 32px auto;
+}

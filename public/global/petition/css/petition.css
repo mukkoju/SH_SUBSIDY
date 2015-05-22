@@ -1,0 +1,209 @@
+#ptnr-dtls {
+    width : 84%;
+    max-width : 760px;
+    margin : 24px 0 16px 8%;
+}
+.add-ptnr {line-height: 1em;}
+.add-ptnr i {font-size : 1.5714em; vertical-align: middle;}
+#ptn {
+    padding-top : 40px;
+    margin-top : 24px;
+}
+#ptn .alert {
+    margin : 16px 0 24px;
+    font-family: 'Gentium Basic', serif;
+}
+#ptn .s-h {
+    font-size: 1.142em;
+    font-family: 'Gentium Basic', serif;
+    border: 0;
+}
+#ptnr-dt .control-group {
+    max-width : 400px;
+    margin : 0 auto 16px;
+}
+#ptn-sbjt {
+    font-family: 'Gentium Basic', serif;
+    font-style: normal;
+    font-size: 1.142em;
+    padding-left: 2.8em;
+    text-indent: -2.8em;
+    width : 84%;
+    margin : 16px 0 24px 8%;
+}
+#ptn-ttl {
+    font-size: 1.142em;
+    font-weight: 300;
+    line-height: 1.6em;
+    position : relative;
+    padding-left : 48px;
+}
+#ptn-ttl:after {
+    content : 'SUB: ';
+    font-weight : 600;
+    position : absolute;
+    top : 0;
+    left : 0;
+}
+#ptn .editor-block {
+    font-family: 'Gentium Basic', serif;
+    font-size: 1.142em;
+    line-height : 1.8em;
+}
+#ptn .editor-block .subhead {
+    font-family: 'Gentium Basic', serif !important;
+    text-decoration: underline;
+    font-weight: normal;
+    font-size: 1.142em;
+    line-height: 1em;
+}
+#ptn #text-block2 {
+    margin: 8px 0 8px 6.25%;
+}
+#ft-nt {
+    font-size : 1.4285em;
+    font-family: 'Gentium Basic', serif;
+    margin-left : 6.25%;
+}
+#ft-nt a {
+    font-size : .9285em;
+    font-style: italic;
+    color : #000;
+}
+/* CSS for #progress-bar in petitions page */
+#progress-bar .s-h {
+    margin: 0 !important;
+}
+#ctrl-bx #ptn-info {
+    margin-bottom : 12px;
+}
+#ctrl-bx #ptn-info .input-medium:not(:first-of-type) {
+    width : 105px;
+}
+#ctrl-bx #ptn-info > span:last-of-type { margin-left: 8px;}
+#ctrl-bx #tag-box > .frame {height : 96px;}
+.sclbar > ul > li:first-of-type {
+    position: relative;
+}
+#sgn-ptn-frm {
+    width : 92%;
+}
+#sgn-ptn-frm.ad-top-mrgn {
+    margin-top : 40px;
+}
+#sgn-ptn-frm .tnc-msg {
+    font-size: .857em;
+    line-height: 1.6em;
+    text-align: center;
+}
+#sgn-ptn-frm .control-group {margin-bottom : 6px;}
+#sgn-ptn-frm .input-xxlarge {min-width : 100%; width : 100%; display: block ; margin : 0 auto;}
+.shr-bx a{
+    display : block !important;
+    width : 60%;
+    margin : 16px auto;
+    text-align: left;
+    font-size: 1.142em;
+    padding : 8px 12px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+}
+.shr-bx a i {
+    font-size: 1.714em;
+    vertical-align: middle;
+    color : #FFF !important;
+}
+.shr-bx .fb-btn {background: #3b5998;}
+.shr-bx .tw-btn {background : #00ACEE;}
+.shr-bx .gp-btn {background : #DE4B39;}
+.atch-list, .file-link {
+    font-family: 'Gentium Basic', serif !important;
+}
+.sgn-cnt-block {
+    line-height: 16px;
+    text-align: center;
+}
+.sgn-cnt-block .req {
+    font-size: 1.2857em;
+    line-height: 24px;
+}
+.sgn-cnt-block .txt {
+    font-size: .857em;
+    line-height: 20px;
+}
+#tb-mnu.scrl {
+    left : -28px !important;
+}
+.ptnsgn {
+    min-height: 360px;
+    margin-left : 6.25%;
+}
+.ptnsgn .subhead {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.4em;
+    padding-top : .4285em;
+    font-size: 1.4285em;
+    color : #555;
+}
+.ptnsgn .btn {
+    margin : 8px 4px 0;
+}
+.ptnsgn .s-h {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 400;
+    color : #888;
+}
+.ptnsgn .scl-shr {
+    margin: 8px 0 24px;
+    text-align: center;
+}
+.ptnsgn ol {
+    padding-left : 1.4285em;
+}
+#hd-sctn {
+    bottom : 20% !important;
+}
+#sgn-area {
+    position: relative;
+    margin-top : 32px;
+}
+#hd-sctn a.btn {
+    font-size: 1em !important;
+}
+#usr-bar .ptn-sgn {
+    line-height: 47px;
+    font-size: 1.142em;
+    margin-left: 8px;
+    z-index: 10;
+    position : relative;
+}
+#usr-bar .ptn-sgn i {
+    font-size: 1.714em;
+    vertical-align: middle;
+}
+/* petition text related styling */
+.stry .t-b:first-of-type {
+    margin-bottom : 8px;
+}
+/* Petitioned people list */
+.ptn-lst {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.ptn-lst li p {margin: 0; padding: 0; line-height: 1.6em;}
+.ptn-lst li {margin-bottom: 8px;}
+.ptn-lst .ttl {
+    font-size : 1.2857em;
+    font-weight : 600;
+    margin-bottom: 8px;
+}
+.ptn-lst .ptn-adrs {
+    font-size: 0.857em;
+    font-weight: 300;
+    color : #232931;
+}
+.ptn-lst i {color : #F44336;font-size: 1.142em;}
+.ptn-lst i:hover {color: #E31E24;}

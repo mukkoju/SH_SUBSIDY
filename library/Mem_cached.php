@@ -1,8 +1,10 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+class Mem_cached{
+    
+    function __construct(){
+        $this -> cache = new Memcached();
+        $this -> cache -> addServer(CACHE_SERVERS, CACHE_PORT); 
+        return $this -> cache;
+    }
+}
