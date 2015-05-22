@@ -1,0 +1,227 @@
+header.main-header{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+}
+header.main-header .container{
+    margin-top: 40px;
+}
+header.main-header.shows{
+    margin-top: -20px;
+    background-color: rgba(106, 184, 105, 0.77);
+    padding-bottom: 14px;
+}
+.header-logo img{
+    max-width: 32%; 
+}
+#subsdy-mnu .navbar-nav li a{
+    color: #fff;
+    text-shadow: none;
+    font-weight: 700;
+}
+#intro{
+    background-image: url("https://testing.saddahaq.com/public/Uploads/dontha/74201041-other-concept.png");
+    position: relative;
+    text-align: center;
+    padding: 0 !important;
+}
+
+.intro-block{
+   background: transparent no-repeat center center fixed; 
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  overflow: hidden;
+  padding: 60px 0;
+}
+#intro section{
+    padding-top: 20%;
+}
+#intro .slogan {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  line-height: 1em;
+  color: white;
+  font-weight: bold;
+}
+
+#intro .secondary-slogan {
+  font-size: 1.1em;
+  color: white;
+  line-height: 1.6em;
+  margin: auto;
+  width: 50%;
+}
+#scrl-dwn{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 32px; 
+  color: white;
+  cursor: pointer;
+}
+#scrl-dwn i{
+  font-size: 1.5em;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 5px 1px 5px 1px;
+}
+
+.subsidy-btn{
+  display: inline-block;
+  line-height: 1.857em;
+  padding: 0.1em 1.285em !important;
+  margin: 4px 0 0px;
+  cursor: pointer;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  border: none;
+  background: #6ab869;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+}
+.subsidy-btn.large{
+    padding: 0.6em 1.285em !important;
+}
+.subsidy-btn.invers{
+    padding: 0.6em 1.285em !important;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+
+#steps{
+    width: 55%;
+    margin-top: 40px;
+    float: left;
+}
+#steps .flw-stps{
+    width: 78%;
+    margin: auto;
+    margin-top: 120px;
+}
+#steps .flw-stps .hedng{
+    font-size: 2.5em;
+    color: #3d3d3d;
+    text-transform: uppercase;
+    line-height: 1.6em;
+    letter-spacing: -0.03em;
+}
+#steps .flw-stps .dsc{
+    font-size: 1.08em;
+    color: #3d3d3d;
+    line-height: 1.3em;
+    margin-bottom: 16px;
+}
+#steps .flw-stps textarea{
+    width: 90%;
+    border: 3px solid rgb(192, 192, 192);
+    height: 120px;
+    border-radius: 10px;
+}
+#stream{
+    width: 45%;
+    float: left;
+}
+#stream .strm-sec{
+    width: 70%;
+    margin: auto;
+    margin-top: 120px;
+}
+#stream .strm-sec .ttl{
+    font-size: 1.4em;
+    color: #3d3d3d;
+    text-transform: uppercase;
+    line-height: 1.6em;
+    letter-spacing: -0.03em;
+    text-align: center;
+    font-weight: 700;
+}
+#stream .strm-sec .sec{
+    background-color: rgb(244, 244, 246);
+    text-align: center;
+    border-radius: 8px;
+}
+#stream .strm-sec .stat{
+    font-size: 3.8em;
+    color: #3d3d3d;
+    line-height: 2em;
+    font-weight: 700;
+    margin-top: 16px;
+}
+#stream .strm-sec .view-all{
+    font-style: italic;
+    float: right;
+    font-size: 1.1em;
+    padding-top: 4px;
+}
+#stream .strm-sec .view-all a{
+    color: #3d3d3d;
+}
+#prtnr-sec{
+    background-color: #6ab869;
+    height: 300px;
+    margin-top: 120px;
+}
+#prtnr-sec h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    padding-top: 16px;  
+}
+#prtnr-sec .foter{
+    color: white;
+    text-align: center;
+    margin-top: 140px;
+}
+footer{
+    height: 56px;
+    margin-top: 10px;
+}
+.socl{
+  float: left;
+  width: 36px;
+  height: 36px;
+  background: black;
+  margin-left: 12px !important;
+  overflow: hidden;
+  border-radius: 50%;
+  padding: 0;
+  margin-top: 8px;
+}
+.socl i{
+    font-size: 3.8em;
+    margin: -8px -8px -13px -19px !important;
+    color: white !important;
+    /*background-color: black;*/
+    /*border-radius: 50%;*/
+}
+
+@media (max-width: 767px){
+    body{
+    font-size: 12px !important;
+    padding: 0 !important;
+    malign: 0 !important;
+    }
+    #steps{
+    width: 100% !important;
+}
+    #stream{
+    width: 100% !important;
+}
+#stream{
+    width: 100% !important;
+}
+}
