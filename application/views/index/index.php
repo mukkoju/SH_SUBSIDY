@@ -63,7 +63,7 @@
                                                 <a href="#services">STATISTICS</a>
                                             </li>
                                             <li>
-                                                <a href="#login" class="subsidy-btn">LOGIN</a>
+                                                <a href="#login" class="subsidy-btn" style="margin-top: -6px">LOGIN</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -162,14 +162,17 @@
                 <div class="grid grid3"><label>
                         State<br>
                         <select id="pldgr-state">
-                            <option></option>
                             <option>Select State</option>
+                            <option>Telangana</option>
+                            <option>Andhra Pradesh</option>
+                            <option>Assam</option>
+                            <option>Goa</option>
+                            <option>Gujarat</option>
                         </select>
                     </label></div>
                 <div class="grid grid3"><label>
                         Service provider<br>
                         <select id="pldgr-gas">
-                            <option></option>
                             <option>Select Service provider</option>
                             <option>Bharath Gas</option>
                           <option>HP Gas</option>
@@ -181,16 +184,21 @@
                         <input type="text" placeholder="Descrption" id="pldgr-dsc">
                     </label></div>
                 <div class="clear-fix"></div>
-                <div class="pldg-msg">I, <span>Name</span>, pledge to give up, LPG Subsidy and contribute to the nation's success and prosperity of its people. It's my honour to.</div>
+                <div class="pldg-msg">I, <span>Name</span>, pledge to give up LPG Subsidy and contribute to the nation's success and prosperity of its people. It's my honour to.</div>
                 <div class="subsidy-btn large frm-btn" id="pldge-btn">PLEDGE</div>
                 </div>
                 <div id="reqst" class="stp-frm">
-                     <div class="model-ttl">Step2:Request your MP/MLA for give up subsidy</div>
+                     <div class="model-ttl">Step2: Request your MP/MLA for give up subsidy</div>
                     <div class="grid2 grid">
                     <label>
                         State<br>
                         <select id="rqst-state">
                             <option>Select State</option>
+                            <option>Telangana</option>
+                            <option>Andhra Pradesh</option>
+                            <option>Assam</option>
+                            <option>Goa</option>
+                            <option>Gujarat</option>
                         </select>
                         
                     </label>
@@ -199,7 +207,8 @@
                     <label>
                         MLA/MP<br>
                         <select id="rqst-mp">
-                            <option>Select MP/MLA</option>
+                            <option>MP (Member of parliament)</option>
+                            <option>MLA (Member of legislative assembly)</option>
                         </select>
                     </label>
                 </div>
@@ -208,7 +217,9 @@
                     <label>
                         Constituency<br>
                         <select id="rqst-cntncy">
-                            <option>Select Constituency</option>
+                            <option>Warangal</option>
+                            <option>Nalgonda</option>
+                            <option>Rangareddy</option>
                         </select>
                     </label>
                 </div>
@@ -219,7 +230,8 @@
                     </label>
                 </div>
                 <div class="clear-fix"></div>
-                <div class="pldg-msg">I, <span>Sathish</span>, pledge to give up, LPG Subsidy and contribute to the nation's success and prosperity of its people. It's my honour to.</div>
+                <div class="pldg-msg">
+                    I request you, Mr.<span> Jaswant Singh Bishnoi</span>, to please give up your LPG subsidy and contribute to the nation's success and prosperity of its people.</div>
                 <div class="subsidy-btn large frm-btn" id="rqst-btn">REQUEST</div>
                 </div>
                 <div id="share" class="stp-frm">

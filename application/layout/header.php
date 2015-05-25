@@ -9,7 +9,5 @@
         <script type="text/javascript" src="/public/global/subsidy/subsidy.js"></script>
         <script type="text/javascript" src="/public/global/subsidy/smoothscroll.js"></script>
         <script type="text/javascript" src="/public/global/bootstrap/js/custom.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-        <script type="text/javascript" src="/public/global/Jquery/jquery.easing.js"></script>
     </head>
     <body></body>
