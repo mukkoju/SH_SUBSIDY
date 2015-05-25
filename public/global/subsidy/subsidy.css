@@ -1,3 +1,6 @@
+body{
+    line-height: 16px;
+}
 a{
     color: #3d3d3d;
 }
@@ -195,14 +198,14 @@ header.main-header.shows{
     margin-top: 120px;
 }
 #steps .flw-stps .hedng{
-    font-size: 2.5em;
+    font-size: 2.1em;
     color: #3d3d3d;
     text-transform: uppercase;
     line-height: 1.6em;
     letter-spacing: -0.03em;
 }
 #steps .flw-stps .dsc{
-    font-size: 1.08em;
+    font-size: 1.03em;
     color: #3d3d3d;
     line-height: 1.3em;
     margin-bottom: 16px;
@@ -287,17 +290,26 @@ footer{
     font-size: 3.8em;
     margin: -8px -8px -13px -19px !important;
     color: white !important;
-    /*background-color: black;*/
-    /*border-radius: 50%;*/
 }
 .step-model{
     height: 100%;
     width: 100%;
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: #e2eef4;
     z-index: 100000;
+}
+.model-ttl{
+    text-align: center;
+    color: #333;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    top: -56px;
+    left: 0;
+    right: 0;
 }
 .step-model .remove-model{
     position: absolute;
@@ -307,6 +319,119 @@ footer{
 }
 .step-model .remove-model{
     font-size: 5em;
+}
+#gvup-frm{
+    width: 2000%;
+    height: 100%;
+    margin-top: 140px;
+/*    min-height: 40%;
+    background-color: #fff;
+    margin: 40px 80px 80px 80px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #e4e4e4;
+    padding: 0 0 16px 0;
+    -webkit-transition: max-width 0.4s, max-height 0.4s, margin 0.4s;
+    -webkit-transition: max-width 0.4s, max-height 0.4s, margin 0.4s;
+    -webkit-transition: max-width 0.4s, max-height 0.4s, margin 0.4s;*/
+
+}
+#gvup-frm .stp-frm{
+    width: 1124px;
+    background-color: #fff;
+    margin: 0px 80px 80px 80px;
+    border-radius: 5px;
+    /*overflow: hidden;*/
+    border: 1px solid #e4e4e4;
+    padding: 0 0 16px 0;
+    -webkit-transition: max-width 0.4s, max-height 0.4s, margin 0.4s;
+    -webkit-transition: max-width 0.4s, max-height 0.4s, margin 0.4s;
+    -webkit-transition: max-width 0.4s, max-height 0.4s, margin 0.4s;
+    float: left;
+    position: relative;
+}
+.grid{
+    float: left;
+    border-bottom: 1px solid #e4e4e4; 
+    border-left: 1px solid #e4e4e4; 
+    position: relative;
+}
+.grid2{
+    width: 49.9%;
+}
+.grid3{
+    width: 33%;
+}
+.grid label{
+  display: block;
+  padding: 20px 20px 10px;
+  vertical-align: top;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #939393;
+  cursor: pointer;
+}
+.grid span{
+  position: absolute;
+  right: 38px;
+  bottom: 16px;
+  color: red;
+  font-size: 1.5em;
+}
+.grid input{
+    border: none;
+    padding: 0;
+    margin: 4px 0;
+    font-weight: 700;
+    width: 100%;
+}
+.grid select{
+    appearance: menulist !important;
+  -webkit-appearance: menulist !important;
+  -moz-appearance: menulist !important;
+  border: none;
+  padding: 0 !important;
+  margin: 3px 0;
+  font-weight: 700;
+  width: 100%;
+}
+.grid input:focus{
+    border: none;
+}
+#share textarea{
+    border: 3px solid rgb(241, 241, 241);
+    padding: 4px;
+    margin: 16px auto;
+    font-weight: 700;
+    width: 50%;
+    display: table;
+    border-radius: 5px;
+    height: 150px;
+}
+.pldg-msg{
+    font-size: 1.6em;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5em;
+    font-weight: bold;
+    color: gray;
+    clear: both;
+    padding: 32px 0 32px 0;
+}
+::-webkit-input-placeholder { font-size: 1.1em; font-weight: bold;}
+::-moz-placeholder { font-size: 1.1em; font-weight: bold;} /* firefox 19+ */
+:-ms-input-placeholder { font-size: 1.1em; font-weight: bold;} /* ie */
+input:-moz-placeholder { font-size: 1.1em; font-weight: bold;}
+.pldg-msg span{
+    color: rgb(187, 59, 59);
+    border-bottom: 1px solid rgb(187, 59, 59);
+    border-bottom-style: dotted;
+}
+.frm-btn{
+    display: table;
+    margin: 0 auto;
 }
 @media (max-width: 767px){
     body{
@@ -347,5 +472,17 @@ footer{
 }
 .container-fluid{
     padding-top: 0;
+}
+.grid2{
+    width: 100%;
+}
+.grid3{
+    width: 100%;
+}
+#gvup-frm{
+    margin: 40px 40px 40px 40px;
+}
+.pldg-msg{
+    width: 90%;
 }
 }
