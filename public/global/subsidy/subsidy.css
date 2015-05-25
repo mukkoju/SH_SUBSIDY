@@ -294,7 +294,7 @@ footer{
 .step-model{
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     background-color: #e2eef4;
@@ -324,24 +324,12 @@ footer{
     width: 2000%;
     height: 100%;
     margin-top: 140px;
-/*    min-height: 40%;
-    background-color: #fff;
-    margin: 40px 80px 80px 80px;
-    border-radius: 5px;
-    overflow: hidden;
-    border: 1px solid #e4e4e4;
-    padding: 0 0 16px 0;
-    -webkit-transition: max-width 0.4s, max-height 0.4s, margin 0.4s;
-    -webkit-transition: max-width 0.4s, max-height 0.4s, margin 0.4s;
-    -webkit-transition: max-width 0.4s, max-height 0.4s, margin 0.4s;*/
-
 }
 #gvup-frm .stp-frm{
-    width: 1124px;
+    /*width: 1124px;*/
     background-color: #fff;
     margin: 0px 80px 80px 80px;
     border-radius: 5px;
-    /*overflow: hidden;*/
     border: 1px solid #e4e4e4;
     padding: 0 0 16px 0;
     -webkit-transition: max-width 0.4s, max-height 0.4s, margin 0.4s;
@@ -480,9 +468,12 @@ input:-moz-placeholder { font-size: 1.1em; font-weight: bold;}
     width: 100%;
 }
 #gvup-frm{
-    margin: 40px 40px 40px 40px;
+    margin: 0px 0px 80px 0px;
 }
 .pldg-msg{
     width: 90%;
+}
+#gvup-frm .stp-frm{
+ margin: 0px 00px 80px 0px;
 }
 }

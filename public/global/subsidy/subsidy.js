@@ -44,7 +44,12 @@ $(document).ready(function ($) {
             $('body').find(".mbl-mnu").addClass('actv');
     });
     $('#steps').on('click', '.gvup', function () {
-        $('body').find('.step-model').removeClass('hideElement')
+            $('body').find('.step-model').removeClass('hideElement');
+            var width = $(window).width();
+            if(width > 767)
+            $('#gvup-frm .stp-frm').css({'width': width-160});
+            else
+            $('#gvup-frm .stp-frm').css({'width': width});
     });
     
     $('body').on('click', '.step-model .remove-model',function(){
