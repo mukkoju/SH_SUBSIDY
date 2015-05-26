@@ -38,6 +38,30 @@ class Index_Model {
         }
     }
 
+    public function getConstituencies($data){
+        $db = $this->getDB('r', '');
+        $temp = $db->query("SELECT _ID_, _Constitiuency_Name FROM _table_constitiuency_data WHERE _State_ = ".$db->quote($data['state'])." ");
+        $res = $temp->fetchAll(PDO::FETCH_ASSOC);
+        if($res){
+            $res = json_encode($res);
+            return '{"success":1,"msg":'.$res.'}';
+        }else{
+            return '{"success":0,"msg":""}';
+        }
+    }
+    
+    public function getCandidateDetails($data){
+        $db = $this->getDB('r', '');
+        $temp = $db->query("SELECT _MP_Name FROM _table_constitiuency_data WHERE _ID_ = ".$db->quote($data['id'])." ");
+        $res = $temp->fetchAll(PDO::FETCH_ASSOC);
+        if($res){
+            $res = json_encode($res);
+            return '{"success":1,"msg":'.$res.'}';
+        }else{
+            return '{"success":0,"msg":""}';
+        }
+    }
+
     private function getDB($type, $db) {
         return (new Model())->getDBConnection($type, $db);
     }

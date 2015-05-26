@@ -21,6 +21,18 @@ class Index extends Controller {
         require APP_PATH . '/models/index.php';
         echo ((new Index_Model())->requestSubsidy($_POST));
     }
+    
+    public function getConstituency(){
+        $this->isXMLRequest();
+        require APP_PATH . '/models/index.php';
+        echo ((new Index_Model())->getConstituencies($_POST));
+    }
+    
+    public function getCandidate(){
+        $this->isXMLRequest();
+        require APP_PATH . '/models/index.php';
+        echo ((new Index_Model())->getCandidateDetails($_POST));
+    }
 
     public function isXMLRequest($checkSession = null) {
         if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && (strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest')) {

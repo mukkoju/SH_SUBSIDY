@@ -37,7 +37,7 @@ $(document).ready(function ($) {
     $('#steps').on('click', '.gvup', function () {
         var states = ['Andhra Pradesh', 'Andaman and Nicobar Islands', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chandigarh', 'Chhattisgarh', 'Dadra and Nagar Haveli', 'Daman and Diu', 'Delhi', 'Goa', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jammu and Kashmir', 'Jharkhand', 'Karnataka', 'Kerala', 'Lakshadweep','Madhya Pradesh', 'Maharashtra', 'Manipur', 'Meghalaya', 'Mizoram', 'Nagaland', 'Orissa', 'Puducherry', 'Punjab', 'Rajasthan', 'Sikkim', 'Tamil Nadu', 'Telangana', 'Tripura', 'Uttar Pradesh', 'Uttarakhand', 'West Bengal'];
         $('body').find('.step-model').removeClass('hideElement');
-        $('body .step-model').find('#rqst-state, #pldgr-state').html('');
+        $('body .step-model').find('#rqst-state, #pldgr-state').html('<option>Select</option>');
         for(var i=0; i<states.length; i++){
         $('body .step-model').find('#rqst-state, #pldgr-state').append('<option>'+states[i]+'</option>');
         }
@@ -210,4 +210,51 @@ $(document).ready(function ($) {
         
         }
     });
+    $(".number-counters").appear(function () {
+        $(".number-counters [data-to]").each(function () {
+            var e = $(this).attr("data-to");
+            $(this).delay(6e3).countTo({
+                from: 50,
+                to: e,
+                speed: 3e3,
+                refreshInterval: 50
+            })
+        })
+    });
+    
+    $('#reqst').on('change', '#rqst-mp, #rqst-state', function(e){
+        if(e.target.id == 'rqst-state'){
+            if($("#rqst-mp").val() == 'Select')
+                return false;
+        }
+        $.ajax({
+           url: '/gtcntcy',
+           type: 'post',
+           data: {'cndidt': $('#rqst-mp').val(), 'state': $('#rqst-state').val()},
+           success: function(res){
+               var d = JSON.parse(res);
+               if(d.success){
+                   $('#reqst').find('#rqst-cntncy').html('<option>Select</option>')
+                  for(var i=0; i<d.msg.length; i++){
+                      $('#reqst').find('#rqst-cntncy').append('<option value="'+d.msg[i]['_ID_']+'">'+d.msg[i]['_Constitiuency_Name']+'</option>');
+                  }
+               }
+           }
+        });
+    });
+    $('#reqst').on('change', '#rqst-cntncy', function(e){
+        $.ajax({
+           url: '/gtcndidt',
+           type: 'post',
+           data: {'id': $('#rqst-cntncy option:selected').val()},
+           success: function(res){
+               var d = JSON.parse(res);
+               if(d.success){
+                      $('#reqst').find('#rqst-dtls').val(d.msg[0]['_MP_Name']);
+                      $('#reqst').find('.pldg-msg span').html(d.msg[0]['_MP_Name']);
+               }
+           }
+        });
+    });
+    
 });

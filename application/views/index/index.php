@@ -10,69 +10,6 @@
     </head>
     <body>
         <div class="container-fluid">
-            <header class="main-header">
-                <div class="container">
-                    <div class="row">
-                        <div class="header-logo">
-                            <a href="index.html"><img src="https://testing.saddahaq.com/public/Uploads/dontha/65794342-gas-subsidy.png"></a>
-                            <a href="index.html">GIVE UP SUBSIDY</a>
-                        </div>
-
-                        <div class="header-mnu-lst">
-                            <nav>
-                                <div class="pull-right" id="subsdy-mnu">
-                                    <!--mobile menu-->
-                                    <div class="hidden-desktop">
-                                        <ul class="main-mnu">
-                                            <li id="mbl-nav"><a href="#home"><i class="icon-navicon"></i></a></li>  
-                                        </ul>
-                                        <div class="mbl-mnu">
-                                            <ul class="main-mnu mbl">
-                                            <li>
-                                                <a href="#home">HOME</a>
-                                            </li>
-                                            <li>
-                                                <a href="#lpgdata">LPG DATA</a>
-                                            </li>
-                                            <li>
-                                                <a href="#stroies">STORIES</a>
-                                            </li>
-                                            <li>
-                                                <a href="#services">STATISTICS</a>
-                                            </li>
-                                            <li>
-                                                <a href="#login">LOGIN</a>
-                                            </li>
-                                        </ul>
-                                        </div>
-                                    </div>
-
-                                    <!--Desktop menu-->
-                                    <div class="hidden-phone">
-                                        <ul class="main-mnu">
-                                            <li>
-                                                <a href="#home">HOME</a>
-                                            </li>
-                                            <li>
-                                                <a href="#lpgdata">LPG DATA</a>
-                                            </li>
-                                            <li>
-                                                <a href="#stroies">STORIES</a>
-                                            </li>
-                                            <li>
-                                                <a href="#services">STATISTICS</a>
-                                            </li>
-                                            <li>
-                                                <a href="#login" class="subsidy-btn" style="margin-top: -6px">LOGIN</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </header>
             <div id="intro" class="intro-block">
                 <section>
                     <div class="slogan">WHY IT MATTERS?</div>
@@ -103,12 +40,12 @@
                 </div>
             </div>
             <div id="stream">
-                <div class="strm-sec">
-                    <div class="ttl">Stream</div>
+                <div class="strm-sec number-counters">
+                    <div class="ttl">Stats</div>
                     <div class="sec">
-                        <div class="stat">99999+</div>
-                        <div class="stat">99999+</div>
-                        <div class="stat">99999+</div>
+                        <div class="stat" data-to="1000">99999+</div>
+                        <div class="stat" data-to="2000">99999+</div>
+                        <div class="stat" data-to="3000">99999+</div>
                     </div>
                     <div class="view-all"><a href="#">view all stats</a></div>
                 </div>
@@ -144,7 +81,7 @@
         <div class="step-model hideElement">
             <div id="gvup-frm">
                 <div id="pldge" class="stp-frm">
-                    <div class="model-ttl">Step1:  Pledge on Give up LPG subsidy</div>
+                    <div class="model-ttl">Step1:  Pledge to Give up LPG subsidy</div>
                 <div class="grid2 grid">
                     <label>
                         Name<br>
@@ -163,11 +100,6 @@
                         State<br>
                         <select id="pldgr-state">
                             <option>Select State</option>
-                            <option>Telangana</option>
-                            <option>Andhra Pradesh</option>
-                            <option>Assam</option>
-                            <option>Goa</option>
-                            <option>Gujarat</option>
                         </select>
                     </label></div>
                 <div class="grid grid3"><label>
@@ -181,24 +113,19 @@
                     </label></div>
                 <div class="grid grid3"><label>
                         Why does you want to give up?<br>
-                        <input type="text" placeholder="Descrption" id="pldgr-dsc">
+                        <input type="text" placeholder="Description" id="pldgr-dsc">
                     </label></div>
                 <div class="clear-fix"></div>
                 <div class="pldg-msg">I, <span>Name</span>, pledge to give up LPG Subsidy and contribute to the nation's success and prosperity of its people. It's my honour to.</div>
                 <div class="subsidy-btn large frm-btn" id="pldge-btn">PLEDGE</div>
                 </div>
                 <div id="reqst" class="stp-frm">
-                     <div class="model-ttl">Step2: Request your MP/MLA for give up subsidy</div>
+                     <div class="model-ttl">Step2: Request your MP/MLA to give up subsidy</div>
                     <div class="grid2 grid">
                     <label>
                         State<br>
                         <select id="rqst-state">
                             <option>Select State</option>
-                            <option>Telangana</option>
-                            <option>Andhra Pradesh</option>
-                            <option>Assam</option>
-                            <option>Goa</option>
-                            <option>Gujarat</option>
                         </select>
                         
                     </label>
@@ -207,8 +134,9 @@
                     <label>
                         MLA/MP<br>
                         <select id="rqst-mp">
-                            <option>MP (Member of parliament)</option>
-                            <option>MLA (Member of legislative assembly)</option>
+                            <option>Select</option>
+                            <option>MP</option>
+                            <option>MLA</option>
                         </select>
                     </label>
                 </div>
@@ -217,9 +145,7 @@
                     <label>
                         Constituency<br>
                         <select id="rqst-cntncy">
-                            <option>Warangal</option>
-                            <option>Nalgonda</option>
-                            <option>Rangareddy</option>
+                            <option>Select</option>
                         </select>
                     </label>
                 </div>
@@ -231,14 +157,13 @@
                 </div>
                 <div class="clear-fix"></div>
                 <div class="pldg-msg">
-                    I request you, Mr.<span> Jaswant Singh Bishnoi</span>, to please give up your LPG subsidy and contribute to the nation's success and prosperity of its people.</div>
+                    I request you, Mr. <span> Jaswant Singh Bishnoi</span>, to please give up your LPG subsidy and contribute to the nation's success and prosperity of its people.</div>
                 <div class="subsidy-btn large frm-btn" id="rqst-btn">REQUEST</div>
                 </div>
                 <div id="share" class="stp-frm">
                 <div class="model-ttl">Step3: Share your stories</div>
                 <textarea placeholder="Paste your story URL here"></textarea>
                 <div class="clear-fix"></div>
-                <!--<div class="pldg-msg">I, <span>Sathish</span>, pledge to give up, LPG Subsidy and contribute to the nation's success and prosperity of its people. It's my honour to.</div>-->
                 <div style="position: absolute; right: 32%; margin-top: -8px">
                 <div class="socl"><i class="icon-facebook" style="color: white !important"></i></div>
                 <div class="socl"><i class="icon-twitter" style="color: white !important"></i></div>

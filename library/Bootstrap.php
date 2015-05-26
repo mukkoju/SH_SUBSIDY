@@ -18,6 +18,14 @@ class Bootstrap {
             require APP_PATH . '/controllers/index.php';
             $controller = new Index();
             $controller->requestLeader();
+        } elseif ($url[0] == 'gtcntcy') {
+            require APP_PATH . '/controllers/index.php';
+            $controller = new Index();
+            $controller->getConstituency();
+        } else if ($url[0] == 'gtcndidt') {
+            require APP_PATH . '/controllers/index.php';
+            $controller = new Index();
+            $controller->getCandidate();
         }
     }
 
