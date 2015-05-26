@@ -6,7 +6,7 @@ $(document).ready(function ($) {
     $('#intro section').css({'padding-top': windowHeight / 2 - sloganHight + 'px'});
     $(window).scroll(function () {
 
-        console.log("scroll");
+//        console.log("scroll");
         if ($(window).scrollTop() > 150) {
 
             $('#intro section').fadeOut();
@@ -115,7 +115,25 @@ $(document).ready(function ($) {
         }
         else
         {
-            alert('success');
+        var name = $('#pldge').find('#pldgr-name').val();
+        var email = $('#pldge').find('#pldgr-email').val();
+        var state = $('#pldge').find('#pldgr-state').val();
+        var gas = $('#pldge').find('#pldgr-gas').val();
+        var dsc = $('#pldge').find('#pldgr-dsc').val();
+        
+        $.ajax({
+           url: '/pldg',
+           type: 'post',
+           data: {'nme': name, 'email': email, 'state':state, 'gas': gas, 'dsc': dsc},
+           success: function(res){
+               var d = JSON.parse(res);
+//               alert(d.msg);
+               if(d.success){
+                var frmWdth = $(this).parents('.stp-frm').outerWidth()+80
+                $(this).parents('.stp-frm').css({'margin-left': -frmWdth});
+               }
+           }
+        });
         var frmWdth = $(this).parents('.stp-frm').outerWidth()+80
         $(this).parents('.stp-frm').css({'margin-left': -frmWdth});
         }
@@ -123,6 +141,7 @@ $(document).ready(function ($) {
     
     
     $('#reqst').on('click', '#rqst-btn', function () {
+        var $this = $(this);
         var elements = $('#gvup-frm #pldge').find("input[type='text'],input[type='password'],input[type='number'],input[type='email'],input[type='radio'],textarea,select");
         var reg = null;
         var flag = 0;
@@ -175,9 +194,26 @@ $(document).ready(function ($) {
         }
         else
         {
-        alert('success');
-        var frmWdth = $(this).parents('.stp-frm').outerWidth()+80
-        $(this).parents('.stp-frm').css({'margin-left': -frmWdth});
+            
+        var state = $('#reqst').find('#rqst-state').val();
+        var mp = $('#reqst').find('#rqst-mp').val();
+        var cntncy = $('#reqst').find('#rqst-cntncy').val();
+        var dtls = $('#reqst').find('#rqst-dtls').val();
+        $.ajax({
+           url: '/rqst',
+           type: 'post',
+           data: {'state':state, 'cndidt': mp, 'cntncy': cntncy, 'dtls': dtls},
+           success: function(res){
+               var d = JSON.parse(res);
+//               alert(d.msg);
+               if(d.success)
+               {
+                var frmWdth = $this.parents('.stp-frm').outerWidth()+80
+                $this.parents('.stp-frm').css({'margin-left': -frmWdth});
+               }
+           }
+        });
+        
         }
     });
 });
