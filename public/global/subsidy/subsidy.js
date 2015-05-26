@@ -1,5 +1,6 @@
 $(document).ready(function ($) {
-    var windowHeight = jQuery(window).height();
+    var windowHeight = $(window).height();
+    var windowWidth = $(window).width();
     $('#intro').height(windowHeight);
     $('#subsdy-mnu .mbl-mnu').height(windowHeight);
     var sloganHight = $('#intro section').height() / 2
@@ -8,24 +9,14 @@ $(document).ready(function ($) {
 
 //        console.log("scroll");
         if ($(window).scrollTop() > 150) {
-
             $('#intro section').fadeOut();
-
         } else {
-
             $('#intro section').fadeIn();
-
-        }
-        ;
-
+        };
         if ($(window).scrollTop() > windowHeight - 100) {
-
             $('.main-header').addClass('shows');
-
         } else {
-
             $('.main-header').removeClass('shows');
-
         }
         ;
     });
@@ -44,14 +35,18 @@ $(document).ready(function ($) {
             $('body').find(".mbl-mnu").addClass('actv');
     });
     $('#steps').on('click', '.gvup', function () {
-            $('body').find('.step-model').removeClass('hideElement');
+        var states = ['Andhra Pradesh', 'Andaman and Nicobar Islands', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chandigarh', 'Chhattisgarh', 'Dadra and Nagar Haveli', 'Daman and Diu', 'Delhi', 'Goa', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jammu and Kashmir', 'Jharkhand', 'Karnataka', 'Kerala', 'Lakshadweep','Madhya Pradesh', 'Maharashtra', 'Manipur', 'Meghalaya', 'Mizoram', 'Nagaland', 'Orissa', 'Puducherry', 'Punjab', 'Rajasthan', 'Sikkim', 'Tamil Nadu', 'Telangana', 'Tripura', 'Uttar Pradesh', 'Uttarakhand', 'West Bengal'];
+        $('body').find('.step-model').removeClass('hideElement');
+        $('body .step-model').find('#rqst-state, #pldgr-state').html('');
+        for(var i=0; i<states.length; i++){
+        $('body .step-model').find('#rqst-state, #pldgr-state').append('<option>'+states[i]+'</option>');
+        }
             var width = $(window).width();
             if(width > 767)
             $('#gvup-frm .stp-frm').css({'width': width-160});
             else
             $('#gvup-frm .stp-frm').css({'width': width});
     });
-    
     $('body').on('click', '.step-model .remove-model',function(){
        $(this).parents('.step-model').addClass('hideElement');
     });
@@ -61,6 +56,7 @@ $(document).ready(function ($) {
    });
    
     $('#pldge').on('click', '#pldge-btn', function () {
+        var $this = $(this);
         var elements = $('#gvup-frm #pldge').find("input[type='text'],input[type='password'],input[type='number'],input[type='email'],input[type='radio'],textarea,select");
         var reg = null;
         var flag = 0;
@@ -127,15 +123,13 @@ $(document).ready(function ($) {
            data: {'nme': name, 'email': email, 'state':state, 'gas': gas, 'dsc': dsc},
            success: function(res){
                var d = JSON.parse(res);
-//               alert(d.msg);
                if(d.success){
-                var frmWdth = $(this).parents('.stp-frm').outerWidth()+80
-                $(this).parents('.stp-frm').css({'margin-left': -frmWdth});
-               }
+                var frmWdth = $this.parents('.stp-frm').outerWidth()+80
+                $this.parents('.stp-frm').css({'margin-left': -frmWdth});
+               }else
+                   alert(d.msg)
            }
         });
-        var frmWdth = $(this).parents('.stp-frm').outerWidth()+80
-        $(this).parents('.stp-frm').css({'margin-left': -frmWdth});
         }
     });
     
@@ -205,12 +199,12 @@ $(document).ready(function ($) {
            data: {'state':state, 'cndidt': mp, 'cntncy': cntncy, 'dtls': dtls},
            success: function(res){
                var d = JSON.parse(res);
-//               alert(d.msg);
                if(d.success)
                {
                 var frmWdth = $this.parents('.stp-frm').outerWidth()+80
                 $this.parents('.stp-frm').css({'margin-left': -frmWdth});
-               }
+               }else
+                   alert(d.msg)
            }
         });
         
