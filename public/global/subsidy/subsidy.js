@@ -250,8 +250,8 @@ $(document).ready(function ($) {
            success: function(res){
                var d = JSON.parse(res);
                if(d.success){
-                      $('#reqst').find('#rqst-dtls').val(d.msg[0]['_MP_Name']);
-                      $('#reqst').find('.pldg-msg span').html(d.msg[0]['_MP_Name']);
+                      $('#reqst').find('#rqst-dtls').val(d.msg[0]['_Candidate_Name']);
+                      $('#reqst').find('.pldg-msg span').html(d.msg[0]['_Candidate_Name']);
                }
            }
         });

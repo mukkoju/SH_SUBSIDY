@@ -52,7 +52,7 @@ class Index_Model {
     
     public function getCandidateDetails($data){
         $db = $this->getDB('r', '');
-        $temp = $db->query("SELECT _MP_Name FROM _table_constitiuency_data WHERE _ID_ = ".$db->quote($data['id'])." ");
+        $temp = $db->query("SELECT _Candidate_Name FROM _table_constitiuency_data WHERE _ID_ = ".$db->quote($data['id'])." ");
         $res = $temp->fetchAll(PDO::FETCH_ASSOC);
         if($res){
             $res = json_encode($res);
