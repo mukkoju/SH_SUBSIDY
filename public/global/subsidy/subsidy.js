@@ -225,7 +225,7 @@ $(document).ready(function ($) {
         
         }
     });
-    $('#reqst').on('click', '#aftr-rqst', function () {
+    $('#reqst').on('click', '#aftr-rqst a', function () {
         var $this = $(this) 
         var frmWdth = $this.parents('.stp-frm').outerWidth()+80
         $this.parents('.stp-frm').css({'margin-left': -frmWdth});
