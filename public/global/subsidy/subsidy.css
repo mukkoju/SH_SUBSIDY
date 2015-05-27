@@ -238,14 +238,25 @@ header.main-header.shows{
     background-color: rgb(244, 244, 246);
     text-align: center;
     border-radius: 8px;
+    padding-bottom: 16px;
 }
 #stream .strm-sec .stat{
-    font-size: 3.8em;
-    color: #3d3d3d;
     line-height: 2em;
-    font-weight: 700;
     margin-top: 16px;
 }
+#stream .strm-sec .stat span{
+    font-size: 3.8em;
+    /*color: #3d3d3d;*/
+    line-height: 2em;
+    font-weight: 700;
+}
+#stream .strm-sec .stat:nth-child(2) span{
+    color: #3FDA8E;
+}
+#stream .strm-sec .stat:nth-child(1) span{
+    color: #F74343;
+}
+
 #stream .strm-sec .view-all{
     font-style: italic;
     float: right;

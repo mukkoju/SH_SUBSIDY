@@ -26,6 +26,10 @@ class Bootstrap {
             require APP_PATH . '/controllers/index.php';
             $controller = new Index();
             $controller->getCandidate();
+        } else if ($url[0] == 'stats') {
+            require APP_PATH . '/controllers/index.php';
+            $controller = new Index();
+            $controller->getStats();
         }
     }
 

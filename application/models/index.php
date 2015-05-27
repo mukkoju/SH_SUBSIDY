@@ -61,6 +61,16 @@ class Index_Model {
             return '{"success":0,"msg":""}';
         }
     }
+    public function getAllStats($data){
+        $db = $this->getDB('r', '');
+        $temp = $db->query("SELECT (SELECT COUNT(*) FROM _table_pledge_record) as pledge, (SELECT COUNT(*) FROM _table_request_record) as request");
+        $res = $temp->fetchAll(PDO::FETCH_ASSOC);
+        if($res){
+            return '{"success":1,"msg":'.json_encode($res).'}';
+        }else{
+            return '{"success":0,"msg":""}';
+        }
+    }
 
     private function getDB($type, $db) {
         return (new Model())->getDBConnection($type, $db);

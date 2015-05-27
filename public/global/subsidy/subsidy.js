@@ -20,8 +20,30 @@ $(document).ready(function ($) {
         }
         ;
     });
-
-    $('body').on('click', '#scrl-dwn', function (e) {
+    $.ajax({
+       url: '/stats',
+       type: 'post',
+       data: {},
+       success: function(res){
+           var d = JSON.parse(res);
+           if(d.success){
+               $('#stream .sec').find('.stat:nth-child(1) span').attr('data-to', d.msg[0].pledge);
+               $('#stream .sec').find('.stat:nth-child(2) span').attr('data-to', d.msg[0].request);
+               $(".number-counters").appear(function () {
+        $(".number-counters [data-to]").each(function () {
+            var e = $(this).attr("data-to");
+            $(this).delay(6e3).countTo({
+                from: 0,
+                to: e,
+                speed: 3e3,
+                refreshInterval: 50
+            })
+        })
+    });
+           }
+       }
+    });
+    $('body').on('click', '#scrl-dwn, .main-mnu li a', function (e) {
         e.preventDefault()
         $('html, body').animate({
             scrollTop: jQuery(this.hash).offset().top

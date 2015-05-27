@@ -55,16 +55,16 @@
                                     <div class="hidden-phone">
                                         <ul class="main-mnu">
                                             <li>
-                                                <a href="#home">HOME</a>
+                                                <a href="#intro">HOME</a>
                                             </li>
                                             <li>
-                                                <a href="#lpgdata">LPG DATA</a>
+                                                <a href="#stream">LPG DATA</a>
                                             </li>
                                             <li>
-                                                <a href="#stroies">STORIES</a>
+                                                <a href="#stream">STORIES</a>
                                             </li>
                                             <li>
-                                                <a href="#services">STATISTICS</a>
+                                                <a href="#stream">STATISTICS</a>
                                             </li>
 <!--                                            <li>
                                                 <a href="#login" class="subsidy-btn" style="margin-top: -6px">LOGIN</a>
