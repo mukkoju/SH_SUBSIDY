@@ -32,7 +32,7 @@ class Index_Model {
         $insert = $db->query("INSERT INTO _table_request_record VALUES (" . $db->quote($id) . "," .
                 $db->quote($data['state']) . "," . $db->quote($data['cndidt']) . "," . $db->quote($data['cntncy']) . "," . $db->quote($data['dtls']) . ", '$time')");
         if ($insert) {
-            return '{"success":1,"msg":"Your successfully sent"}';
+            return '{"success":1,"msg":"Your request successfully sent"}';
         } else {
             return '{"success":0"msg":"Something went wrong while sending request. Please try again."}';
         }

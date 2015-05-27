@@ -37,9 +37,9 @@ $(document).ready(function ($) {
     $('#steps').on('click', '.gvup', function () {
         var states = ['Andhra Pradesh', 'Andaman and Nicobar Islands', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chandigarh', 'Chhattisgarh', 'Dadra and Nagar Haveli', 'Daman and Diu', 'Delhi', 'Goa', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jammu and Kashmir', 'Jharkhand', 'Karnataka', 'Kerala', 'Lakshadweep','Madhya Pradesh', 'Maharashtra', 'Manipur', 'Meghalaya', 'Mizoram', 'Nagaland', 'Orissa', 'Puducherry', 'Punjab', 'Rajasthan', 'Sikkim', 'Tamil Nadu', 'Telangana', 'Tripura', 'Uttar Pradesh', 'Uttarakhand', 'West Bengal'];
         $('body').find('.step-model').removeClass('hideElement');
-        $('body .step-model').find('#rqst-state, #pldgr-state').html('<option>Select</option>');
+        $('body .step-model').find('#rqst-state, #pldgr-state').html('<option value="">Select</option>');
         for(var i=0; i<states.length; i++){
-        $('body .step-model').find('#rqst-state, #pldgr-state').append('<option>'+states[i]+'</option>');
+        $('body .step-model').find('#rqst-state, #pldgr-state').append('<option value="'+states[i]+'">'+states[i]+'</option>');
         }
             var width = $(window).width();
             if(width > 767)
@@ -77,10 +77,16 @@ $(document).ready(function ($) {
                     if ($.trim($(this).find('option:selected').val()) !== '') {
                         error = 'Please slelect your state';
                         reg = /^[a-zA-Z0-9 ]+$/;
+                    }else{
+                        error = 'Please slelect your state';
+                        reg = /^[a-zA-Z0-9 ]+$/;
                     }
                     break;
                 case 'pldgr-gas':
                     if ($.trim($(this).find('option:selected').val()) !== '') {
+                        error = 'Please slelect your service provider';
+                        reg = /^[a-zA-Z0-9 ]+$/;
+                    }else{
                         error = 'Please slelect your service provider';
                         reg = /^[a-zA-Z0-9 ]+$/;
                     }
@@ -136,7 +142,7 @@ $(document).ready(function ($) {
     
     $('#reqst').on('click', '#rqst-btn', function () {
         var $this = $(this);
-        var elements = $('#gvup-frm #pldge').find("input[type='text'],input[type='password'],input[type='number'],input[type='email'],input[type='radio'],textarea,select");
+        var elements = $('#gvup-frm #reqst').find("input[type='text'],input[type='password'],input[type='number'],input[type='email'],input[type='radio'],textarea,select");
         var reg = null;
         var flag = 0;
         var error = "Cannot be empty";
@@ -148,17 +154,26 @@ $(document).ready(function ($) {
                     if ($.trim($(this).find('option:selected').val()) !== '') {
                         error = 'Please slelect your state';
                         reg = /^[a-zA-Z0-9 ]+$/;
+                    }else{
+                        error = 'Please slelect your state';
+                        reg = /^[a-zA-Z0-9 ]+$/;
                     }
                     break;
                     case 'rqst-mp':
                     if ($.trim($(this).find('option:selected').val()) !== '') {
                         error = 'Slelect one MP/MLA';
                         reg = /^[a-zA-Z0-9 ]+$/;
+                    }else{
+                        error = 'Please slelect MP/MLA';
+                        reg = /^[a-zA-Z0-9 ]+$/;
                     }
                     break;
                     case 'rqst-cntncy':
                     if ($.trim($(this).find('option:selected').val()) !== '') {
                         error = 'Select Constituency';
+                        reg = /^[a-zA-Z0-9 ]+$/;
+                    }else{
+                        error = 'Please slelect constituency';
                         reg = /^[a-zA-Z0-9 ]+$/;
                     }
                     break;
@@ -201,14 +216,19 @@ $(document).ready(function ($) {
                var d = JSON.parse(res);
                if(d.success)
                {
-                var frmWdth = $this.parents('.stp-frm').outerWidth()+80
-                $this.parents('.stp-frm').css({'margin-left': -frmWdth});
+               $this.addClass('hideElement');
+               $('#reqst #aftr-rqst').removeClass('hideElement');         
                }else
                    alert(d.msg)
            }
         });
         
         }
+    });
+    $('#reqst').on('click', '#aftr-rqst', function () {
+        var $this = $(this) 
+        var frmWdth = $this.parents('.stp-frm').outerWidth()+80
+        $this.parents('.stp-frm').css({'margin-left': -frmWdth});
     });
     $(".number-counters").appear(function () {
         $(".number-counters [data-to]").each(function () {
@@ -234,7 +254,7 @@ $(document).ready(function ($) {
            success: function(res){
                var d = JSON.parse(res);
                if(d.success){
-                   $('#reqst').find('#rqst-cntncy').html('<option>Select</option>')
+                   $('#reqst').find('#rqst-cntncy').html('<option value="">Select</option>')
                   for(var i=0; i<d.msg.length; i++){
                       $('#reqst').find('#rqst-cntncy').append('<option value="'+d.msg[i]['_ID_']+'">'+d.msg[i]['_Constitiuency_Name']+'</option>');
                   }

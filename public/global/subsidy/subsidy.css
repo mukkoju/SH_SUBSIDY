@@ -365,7 +365,7 @@ footer{
   position: absolute;
   right: 38px;
   bottom: 16px;
-  color: red;t
+  color: red;
   font-size: 1.5em;
 }
 .grid input{
@@ -421,6 +421,19 @@ input:-moz-placeholder { font-size: 1.1em; font-weight: bold;}
 .frm-btn{
     display: table;
     margin: 0 auto;
+}
+#aftr-rqst{
+    display: table;
+    margin: 0 auto;
+}
+#aftr-rqst a{
+    position: absolute;
+    right: 24px;
+    bottom: 16px;
+    color: rgb(205, 42, 42)
+}
+#aftr-rqst a:hover{
+    color: rgb(205, 42, 42) !important;
 }
 @media (max-width: 767px){
     body{

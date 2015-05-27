@@ -105,10 +105,10 @@
                 <div class="grid grid3"><label>
                         Service provider<br>
                         <select id="pldgr-gas">
-                            <option>Select Service provider</option>
-                            <option>Bharath Gas</option>
-                          <option>HP Gas</option>
-                          <option>Indane Gas</option>
+                            <option value="">Select</option>
+                            <option value="Bharath">Bharath Gas</option>
+                            <option value="HP">HP Gas</option>
+                            <option value="Indane">Indane Gas</option>
                         </select>
                     </label></div>
                 <div class="grid grid3"><label>
@@ -134,9 +134,9 @@
                     <label>
                         MLA/MP<br>
                         <select id="rqst-mp">
-                            <option>Select</option>
-                            <option>MP</option>
-                            <option>MLA</option>
+                            <option value="">Select</option>
+                            <option value="MP">MP</option>
+                            <option value="MLA">MLA</option>
                         </select>
                     </label>
                 </div>
@@ -152,24 +152,32 @@
                 <div class="grid2 grid">
                     <label>
                         Details shown here<br>
-                        <input type="text" placeholder="@twitter" id="rqst-dtls">
+                        <input type="text" placeholder="Name" id="rqst-dtls">
                     </label>
                 </div>
                 <div class="clear-fix"></div>
                 <div class="pldg-msg">
-                    I request you, Mr. <span> Jaswant Singh Bishnoi</span>, to please give up your LPG subsidy and contribute to the nation's success and prosperity of its people.</div>
+                    I request you, Mr. <span> Name</span>, to please give up your LPG subsidy and contribute to the nation's success and prosperity of its people.</div>
                 <div class="subsidy-btn large frm-btn" id="rqst-btn">REQUEST</div>
+                <div id="aftr-rqst" class="hideElement">
+                <h5>Your request sent successfully!! share this on your Wall</h5>
+                <div style="display: table; margin: 0 auto;">
+                <div class="socl"><i class="icon-facebook" style="color: white !important"></i></div>
+                <div class="socl"><i class="icon-twitter" style="color: white !important"></i></div>
+                </div>
+                <a href="#">Skip</a>
+                </div>
                 </div>
                 <div id="share" class="stp-frm">
                 <div class="model-ttl">Step3: Share your stories</div>
                 <textarea placeholder="Paste your story URL here"></textarea>
                 <div class="clear-fix"></div>
-                <div style="position: absolute; right: 32%; margin-top: -8px">
+<!--                <div style="position: absolute; right: 32%; margin-top: -8px">
                 <div class="socl"><i class="icon-facebook" style="color: white !important"></i></div>
                 <div class="socl"><i class="icon-twitter" style="color: white !important"></i></div>
                 <div class="socl"><i class="icon-google" style="color: white !important"></i></div>
-                </div>
-                <div class="subsidy-btn large frm-btn">Share</div>
+                </div>-->
+                <div class="subsidy-btn large frm-btn">Publish</div>
                 
                 </div>
             <div class="remove-model" title="Close"><i class="icon-remove"></i></div>

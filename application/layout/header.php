@@ -44,9 +44,9 @@
                                             <li>
                                                 <a href="#services">STATISTICS</a>
                                             </li>
-                                            <li>
+<!--                                            <li>
                                                 <a href="#login">LOGIN</a>
-                                            </li>
+                                            </li>-->
                                         </ul>
                                         </div>
                                     </div>
@@ -66,9 +66,9 @@
                                             <li>
                                                 <a href="#services">STATISTICS</a>
                                             </li>
-                                            <li>
+<!--                                            <li>
                                                 <a href="#login" class="subsidy-btn" style="margin-top: -6px">LOGIN</a>
-                                            </li>
+                                            </li>-->
                                         </ul>
                                     </div>
                                 </div>
