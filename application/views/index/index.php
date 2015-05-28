@@ -1,3 +1,4 @@
+
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -185,3 +186,11 @@
         </div>
     </body>
 </html>
+<?php
+    $curl = curl_init();
+    curl_setopt ($curl, CURLOPT_URL, "http://www.php.net");
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+    $r = curl_exec ($curl);
+    curl_close ($curl);
+    var_dump($r);
+?>  

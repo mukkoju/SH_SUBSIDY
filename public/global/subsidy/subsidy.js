@@ -17,8 +17,7 @@ $(document).ready(function ($) {
             $('.main-header').addClass('shows');
         } else {
             $('.main-header').removeClass('shows');
-        }
-        ;
+        };
     });
     $.ajax({
        url: '/stats',
@@ -252,17 +251,6 @@ $(document).ready(function ($) {
         var frmWdth = $this.parents('.stp-frm').outerWidth()+80
         $this.parents('.stp-frm').css({'margin-left': -frmWdth});
     });
-    $(".number-counters").appear(function () {
-        $(".number-counters [data-to]").each(function () {
-            var e = $(this).attr("data-to");
-            $(this).delay(6e3).countTo({
-                from: 50,
-                to: e,
-                speed: 3e3,
-                refreshInterval: 50
-            })
-        })
-    });
     
     $('#reqst').on('change', '#rqst-mp, #rqst-state', function(e){
         if(e.target.id == 'rqst-state'){
@@ -297,6 +285,6 @@ $(document).ready(function ($) {
                }
            }
         });
-    });
+    }); 
     
 });
