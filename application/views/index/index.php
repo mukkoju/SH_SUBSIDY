@@ -22,17 +22,17 @@
         <div class="container-fluid">
             <div id="steps">
                 <div class="flw-stps">
-                    <div class="hedng">step1:<b>pledge</b></div>
+                    <div class="hedng">step1:<b> pledge</b></div>
                     <div class="dsc">LPG is a subsidized commodity in India and the subsidy amount was a whopping Rs. 40,000 crores during 2013-14. The same money could be used for development purpose. We call upon all LPG consumers who can afford to pay the market price for their LPG supply to be a part of this nation building exercise by giving up LPG subsidy.</div>
                     <a class="subsidy-btn large gvup">YES, I GIVE UP</a>
                 </div>
                 <div class="flw-stps">
-                    <div class="hedng">step2:<b>ASK YOUR MLA/MP</b></div>
-                    <div class="dsc">LPG is a subsidized commodity in India and the subsidy amount was a whopping Rs. 40,000 crores during 2013-14. The same money could be used for development purpose. We call upon all LPG consumers who can afford to pay the market price for their LPG supply to be a part of this nation building exercise by giving up LPG subsidy.</div>
+                    <div class="hedng">step2:<b> ASK YOUR MLA/MP</b></div>
+                    <div class="dsc">LPG is a subsidized commodity in India and the subsidy amount was a whopping Rs. 40,000 crores during 2013-14. The same money could be used for development purpose. Call upon your MP to give up his/her subsidy. Let them be our role models.</div>
                     <a class="subsidy-btn large gvup">SEND A MAIL</a>
                 </div>
                 <div class="flw-stps">
-                    <div class="hedng">step3:<b>SHARE YOUR STORY</b></div>
+                    <div class="hedng">step3:<b> SHARE YOUR STORY</b></div>
                     <textarea></textarea>
                     <a class="subsidy-btn large" style="float: left;">SHARE IT</a>
                     <div class="socl"><i class="icon-facebook" style="color: white !important"></i></div>
@@ -113,7 +113,7 @@
                             </select>
                         </label></div>
                     <div class="grid grid3"><label>
-                            Why does you want to give up?<br>
+                             Why do you want to give up?<br>
                             <input type="text" placeholder="Description" id="pldgr-dsc">
                         </label></div>
                     <div class="clear-fix"></div>
@@ -186,11 +186,3 @@
         </div>
     </body>
 </html>
-<?php
-    $curl = curl_init();
-    curl_setopt ($curl, CURLOPT_URL, "http://www.php.net");
-    curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-    $r = curl_exec ($curl);
-    curl_close ($curl);
-    var_dump($r);
-?>  
