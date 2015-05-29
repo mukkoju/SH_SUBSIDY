@@ -168,7 +168,7 @@ header.main-header.shows{
   cursor: pointer;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
-  border-radius: 20px;
+  border-radius: 5px;
   border: none;
   background: #6ab869;
   color: white;
@@ -184,7 +184,7 @@ header.main-header.shows{
 .subsidy-btn.invers{
     padding: 0.6em 1.285em !important;
     border: 3px solid #fff;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #steps{
@@ -206,7 +206,7 @@ header.main-header.shows{
 #steps .flw-stps .dsc{
     font-size: 1.1em;
     color: #3d3d3d;
-    line-height: 1.3em;
+    line-height: 1.6em;
     /*margin-bottom: 16px;*/
     letter-spacing: 0.02em;
 }
@@ -264,17 +264,26 @@ header.main-header.shows{
     background-color: #6ab869;
     height: 300px;
     margin-top: 120px;
+    text-align: center;
 }
 #prtnr-sec h2{
     font-size: 2em;
     color: #fff;
-    text-align: center;
     padding-top: 16px;  
+}
+.prtnr-logos{
+ display: table;
+ margin: 36px auto;
+}
+.prtnr-logos img{
+    /*float: left;*/
+     margin: 8px;
+    /*-webkit-filter: grayscale(100%);*/ 
+    /*filter: grayscale(100%);*/
 }
 #prtnr-sec .foter{
     color: white;
-    text-align: center;
-    margin-top: 156px;
+    /*margin-top: 156px;*/
 }
 footer{
     height: 56px;

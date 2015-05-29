@@ -68,6 +68,11 @@
             <div class="clearfix"></div>
             <div id="prtnr-sec">
                 <h2>OUR PROUD PARTNERS</h2>
+                <div class="prtnr-logos">
+                    <img src="https://factly.in/wp-content/uploads/2014/12/Factly-Logo.png" style="max-width: 18%">
+                    <img src="https://testing.saddahaq.com/public/images/lp_logo.png" style="max-width: 44%">
+                </div>
+                <div class="clearfix"></div>
                 <div class="foter">
                     <p>READY TO PARTNER WITH US?</p>
                     <a class="subsidy-btn invers" href="#">CONTACT US</a>
@@ -184,5 +189,6 @@
                 <div class="remove-model" title="Close"><i class="icon-remove"></i></div>
             </div>
         </div>
+        </script>
     </body>
-</html>
+</html> 
